@@ -1,0 +1,16 @@
+image: node:latest
+
+cache:
+  paths:
+    - node_modules/
+
+lint:
+  script:
+    - yarn
+    - yarn lint
+
+deploy:
+  only:
+    - master
+  script:
+    - npx semantic-release

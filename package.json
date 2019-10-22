@@ -12,9 +12,6 @@
   ],
   "author": "Jason Dimitratos / Competec",
   "main": "index.js",
-  "peerDependencies": {
-    "eslint": "6.x"
-  },
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",

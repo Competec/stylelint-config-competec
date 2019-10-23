@@ -11,7 +11,6 @@ module.exports = {
         'string-quotes': 'single',
         'selector-max-id': 0,
         'block-opening-brace-space-before': 'always',
-        'selector-nested-pattern': "^&:(?:hover|focus)$",
 
         'function-comma-space-after': 'always',
         'value-list-comma-space-after': 'always',

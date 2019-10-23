@@ -2,8 +2,8 @@ module.exports = {
     'extends': [
         'stylelint-config-property-sort-order-smacss',
     ],
-    "plugins": [
-        "stylelint-use-nesting"
+    'plugins': [
+        'stylelint-use-nesting'
     ],
     'rules': {
         'max-nesting-depth': 4,
@@ -34,9 +34,12 @@ module.exports = {
         'block-no-empty': true,
         'declaration-no-important': true,
 
-        'csstools/use-nesting': 'always',
+        'function-blacklist': ['hsl', 'hsla', 'rgb', 'rgba'],
         'no-duplicate-selectors': true,
         'function-calc-no-invalid': true,
         'selector-no-qualifying-type': true,
+
+        //external
+        'csstools/use-nesting': 'always'
     }
 };

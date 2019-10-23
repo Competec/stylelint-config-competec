@@ -4,6 +4,32 @@
 
 Competec Stylelint Rules
 
+## Installation
+
+You'll first need to install [Stylelint](https://stylelint.io/) with yarn:
+
+```
+$ yarn add stylelint --dev
+```
+
+Next, install `@competec/stylelint-config-competec` with yarn:
+
+```
+$ yarn add @competec/stylelint-config-competec --dev
+```
+
+## Usage
+
+Create a file named stylelint.config.js with following contents in the root folder of your project:
+
+```json
+{
+    "extends": [
+        "@competec/stylelint-config-competec"
+    ]
+}
+```
+
 ## Developer Information
 
 Please use the `yarn commit` command to add commit with the correct formatting.

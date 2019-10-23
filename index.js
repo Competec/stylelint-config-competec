@@ -38,6 +38,6 @@ module.exports = {
         'csstools/use-nesting': 'always',
         'no-duplicate-selectors': true,
         'function-calc-no-invalid': true,
-        'selector-no-qualifying-type': true
+        'selector-no-qualifying-type': true,
     }
 };

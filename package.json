@@ -1,0 +1,49 @@
+{
+  "name": "@competec/stylelint-config-competec",
+  "version": "1.0.0",
+  "description": "Competec Style Rules",
+  "keywords": [
+    "stylelint",
+    "stylelintconfig",
+    "stylelint-config",
+    "competec"
+  ],
+  "main": "index.js",
+  "files": [
+    "index.js"
+  ],
+  "author": "Jason Dimitratos / Competec",
+  "license": "MIT",
+  "devDependencies": {
+    "@commitlint/cli": "^8.2.0",
+    "@commitlint/config-conventional": "^8.2.0",
+    "@semantic-release/git": "^7.0.16",
+    "@semantic-release/gitlab": "^4.0.0",
+    "husky": "^3.0.9",
+    "semantic-git-commit-cli": "^3.5.0",
+    "semantic-release": "^15.13.24"
+  },
+  "scripts": {
+    "commit": "BRANCH=$(git rev-parse --abbrev-ref HEAD | grep -oP '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || git rev-parse --abbrev-ref HEAD);sgc -s $(echo $BRANCH | sed -r \"s/\\x1B\\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\")",
+    "gbc": "git add . && yarn commit",
+    "lint": "npx stylelint test.scss --config ./index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@gitlab.com:competec-opensource/stylelint-config-competec.git"
+  },
+  "bugs": {
+    "url": "https://gitlab.com:competec-opensource/stylelint-config-competec/issues"
+  },
+  "homepage": "https://gitlab.com:competec-opensource/stylelint-config-competec#readme",
+  "husky": {
+    "hooks": {
+      "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"
+    }
+  },
+  "dependencies": {
+    "stylelint-use-nesting": "^1.2.1",
+    "stylelint": "^11.1.1",
+    "stylelint-config-property-sort-order-smacss": "^5.0.0"
+  }
+}

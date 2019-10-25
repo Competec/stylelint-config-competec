@@ -12,9 +12,9 @@ module.exports = {
         'selector-max-id': 0,
         'block-opening-brace-space-before': 'always',
 
-        'function-comma-space-after': 'always',
+        'function-comma-space-after': 'always-single-line',
+        'function-parentheses-newline-inside': 'always-multi-line',
         'value-list-comma-space-after': 'always',
-        'selector-list-comma-space-after': 'always',
         'media-query-list-comma-space-after': 'always',
 
         'declaration-block-trailing-semicolon': 'always',

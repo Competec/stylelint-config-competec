@@ -30,6 +30,7 @@ module.exports = {
         'declaration-block-no-duplicate-properties': true,
         'property-no-vendor-prefix': true,
         'comment-no-empty': true,
+        'number-leading-zero': 'never',
         'no-empty-first-line': true,
         'block-no-empty': true,
         'declaration-no-important': true,

@@ -39,6 +39,7 @@ module.exports = {
         'no-duplicate-selectors': true,
         'function-calc-no-invalid': true,
         'selector-no-qualifying-type': true,
+        'selector-max-type': 0,
 
         //external
         'csstools/use-nesting': 'always'

@@ -18,7 +18,7 @@
     "@commitlint/cli": "^8.2.0",
     "@commitlint/config-conventional": "^8.2.0",
     "@semantic-release/git": "^7.0.16",
-    "@semantic-release/gitlab": "^4.0.0",
+    "@semantic-release/github": "^5.5.5",
     "husky": "^3.0.9",
     "semantic-git-commit-cli": "^3.5.0",
     "semantic-release": "^15.13.24"
@@ -30,12 +30,12 @@
   },
   "repository": {
     "type": "git",
-    "url": "git@gitlab.com:competec-opensource/stylelint-config-competec.git"
+    "url": "https://github.com/Competec/stylelint-config-competec.git"
   },
   "bugs": {
-    "url": "https://gitlab.com:competec-opensource/stylelint-config-competec/issues"
+    "url": "https://github.com/competec/stylelint-config-competec/issues"
   },
-  "homepage": "https://gitlab.com:competec-opensource/stylelint-config-competec#readme",
+  "homepage": "https://github.com/competec-opensource/stylelint-config-competec#readme",
   "husky": {
     "hooks": {
       "commit-msg": "commitlint -E HUSKY_GIT_PARAMS"

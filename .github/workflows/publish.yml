@@ -42,5 +42,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GH_TOKEN }}
           NODE_AUTH_TOKEN: ${{secrets.GH_TOKEN}}
-          COMMIT_MSG: ${{$(echo git log -1 --pretty=%B)}
+          COMMIT_MSG: ${{$(echo git log -1 --pretty=%B)}}
         if: COMMIT_MSG

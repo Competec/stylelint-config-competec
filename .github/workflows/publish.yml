@@ -1,7 +1,3 @@
-94eb5aa3d57130167582794a60b880cf6b7b8b46
-
-
-
 name: test + publish
 
 on: [push]

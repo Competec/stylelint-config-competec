@@ -14,7 +14,7 @@ jobs:
       - run: yarn lint
 
   publish-npm:
-    if: contains(steps.ref, 'master')
+    if: contains(github.ref, 'master')
     needs: test
     runs-on: ubuntu-latest
     steps:

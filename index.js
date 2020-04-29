@@ -40,6 +40,7 @@ module.exports = {
         'function-calc-no-invalid': true,
         'selector-no-qualifying-type': true,
         'selector-max-type': 0,
+        'no-missing-end-of-source-newline': true,
 
         //external
         'csstools/use-nesting': 'always'

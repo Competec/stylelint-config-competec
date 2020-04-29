@@ -1,6 +1,6 @@
 {
   "name": "@competec/stylelint-config-competec",
-  "version": "1.2.5",
+  "version": "1.3.0",
   "description": "Competec Style Rules",
   "keywords": [
     "stylelint",
@@ -12,7 +12,7 @@
   "files": [
     "index.js"
   ],
-  "author": "Jason Dimitratos / Competec",
+  "author": "Competec",
   "license": "MIT",
   "devDependencies": {
     "@commitlint/cli": "^8.2.0",

@@ -15,13 +15,13 @@
   "author": "Competec",
   "license": "MIT",
   "devDependencies": {
-    "@commitlint/cli": "^8.2.0",
+    "@commitlint/cli": "^8.3.5",
     "@commitlint/config-conventional": "^8.2.0",
     "@semantic-release/git": "^7.0.16",
     "@semantic-release/github": "^5.5.5",
     "husky": "^3.0.9",
     "semantic-git-commit-cli": "^3.5.0",
-    "semantic-release": "^15.13.24"
+    "semantic-release": "^15.14.0"
   },
   "scripts": {
     "commit": "BRANCH=$(git rev-parse --abbrev-ref HEAD | grep -oE '.*((?:VOR|DEV|DO|SEARCH|SHOP3)-[0-9]+)' || git rev-parse --abbrev-ref HEAD);sgc -s $(echo $BRANCH | sed -E \"s/\\x1B\\[([0-9]{1,2}(;[0-9]{1,2})?)?[m|K]//g\")",
